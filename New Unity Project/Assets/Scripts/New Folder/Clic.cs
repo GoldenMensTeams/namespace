@@ -2,8 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour {
+public class Clic : MonoBehaviour {
 
+    public bool cliced = false;
+    void OnMouseDown()
+    {
+        cliced = true;
+    }
+    void OnMouseUp()
+    {
+        cliced = false;
+    }
 	// Use this for initialization
 	void Start () {
 		
