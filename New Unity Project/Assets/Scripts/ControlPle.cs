@@ -53,6 +53,7 @@ public class ControlPle : MonoBehaviour
         {
             gameG.ResetTrigger("idle");
             gameG.SetTrigger("Jump");
+            
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, Jump), ForceMode2D.Impulse);
         }
 
@@ -66,7 +67,7 @@ public class ControlPle : MonoBehaviour
 
             CorectRandL();
             gameObject.GetComponent<Animator>().SetTrigger("attack");
-
+          
             //if (isJump)
             //{
             //    gameObject.GetComponent<Animator>().SetTrigger("idle");
