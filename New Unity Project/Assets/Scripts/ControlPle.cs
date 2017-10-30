@@ -6,12 +6,16 @@ using CnControls;
 
 public class ControlPle : MonoBehaviour
 {
+    GameObject menuOnGame;
+    GameObject playerGui;
+
     Vector3 position;
     public float speed = 5f;
     public float Jump = 5f;
     private bool isJump = true;
     private float MoveX;
     private bool RandL = true;
+    private bool isOpenMenu = false;
     private Animator gameG;
 
     public float HELS = 1f;
@@ -22,6 +26,9 @@ public class ControlPle : MonoBehaviour
     void Start()
     {
         gameG = GetComponent<Animator>();
+        playerGui = GameObject.FindGameObjectWithTag("PlayerGui");
+        menuOnGame = GameObject.FindGameObjectWithTag("MenuOnGame");
+        menuOnGame.SetActive(false);
     }
 
     void Move()
@@ -33,12 +40,12 @@ public class ControlPle : MonoBehaviour
         {
             // transform.rotation = Quaternion.Euler(0, 0, 0);
             gameG.SetFloat("MoveX", position.x, 0.1f, Time.deltaTime);
-          
+
             RandL = true;
             gameG.SetBool("RandL", RandL);
         }
         else if (position.x < 0)
-        {          
+        {
             gameG.SetFloat("MoveX", position.x, 0.1f, Time.deltaTime);
 
             RandL = false;
@@ -55,10 +62,12 @@ public class ControlPle : MonoBehaviour
             gameG.SetTrigger("Jump");
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, Jump), ForceMode2D.Impulse);
         }
-
-
+        if (CnInputManager.GetButtonUp("OpenMenu"))
+        {
+           
+            OpenMenu();
+        }
     }
-
     void Attack()
     {
         if (CnInputManager.GetButtonUp("Attack"))
@@ -111,6 +120,14 @@ public class ControlPle : MonoBehaviour
         }
      
     }
+
+    void OpenMenu()
+    {
+        playerGui.SetActive(false);
+        menuOnGame.SetActive(true);
+    }
+
+   
 
     void OnTriggerEnter2D(Collider2D other)
     {
