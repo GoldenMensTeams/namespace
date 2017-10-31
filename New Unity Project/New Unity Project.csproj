@@ -140,9 +140,6 @@
     <Compile Include="Assets\Scripts\CameraSk.cs" />
     <Compile Include="Assets\Scripts\ControlPle.cs" />
     <Compile Include="Assets\Scripts\Ground.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Car.cs" />
-    <Compile Include="Assets\Scripts\New Folder\Clic.cs" />
-    <Compile Include="Assets\Scripts\New Folder\PlContr.cs" />
     <Compile Include="Assets\Scripts\Resp.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
   </ItemGroup>

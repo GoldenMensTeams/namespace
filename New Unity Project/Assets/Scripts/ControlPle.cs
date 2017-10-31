@@ -8,6 +8,8 @@ public class ControlPle : MonoBehaviour
 {
     Vector3 position;
     public float speed = 5f;
+    private float memor_speed;
+    public float run;
     public float Jump = 5f;
     private bool isJump = true;
     private float MoveX;
@@ -21,6 +23,7 @@ public class ControlPle : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        memor_speed = speed;
         gameG = GetComponent<Animator>();
     }
 
@@ -29,18 +32,40 @@ public class ControlPle : MonoBehaviour
         CorectROT();
 
         position = new Vector3(CnInputManager.GetAxis("Horizontal"), 0f, 0f);
+
+
+
         if (position.x > 0)
         {
-            // transform.rotation = Quaternion.Euler(0, 0, 0);
+            if(CnInputManager.GetButtonDown("Run"))
+            {
+                speed = run;
+                Debug.Log(run);
+            }
+            else {
+                // transform.rotation = Quaternion.Euler(0, 0, 0);
+
+
+                speed = memor_speed;
+                Debug.Log(memor_speed);
+            }
             gameG.SetFloat("MoveX", position.x, 0.1f, Time.deltaTime);
-          
             RandL = true;
             gameG.SetBool("RandL", RandL);
         }
         else if (position.x < 0)
-        {          
+        {
+            if (CnInputManager.GetButtonDown("Run"))
+            {
+                speed = run;
+                Debug.Log(run);
+            }
+            else
+            {
+                speed = memor_speed;
+                Debug.Log(memor_speed);
+            }
             gameG.SetFloat("MoveX", position.x, 0.1f, Time.deltaTime);
-
             RandL = false;
             gameG.SetBool("RandL", RandL);
         }
@@ -115,7 +140,7 @@ public class ControlPle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Gra")
+        if (other.tag == "Ground")
         {
 
             gameObject.GetComponent<Animator>().SetTrigger("idle");
@@ -128,7 +153,7 @@ public class ControlPle : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Gra")
+        if (other.tag == "Ground")
         {
 
             gameObject.GetComponent<Animator>().SetTrigger("Jump");
