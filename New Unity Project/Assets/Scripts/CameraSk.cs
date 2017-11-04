@@ -9,5 +9,6 @@ public class CameraSk : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = new Vector3(pl.transform.position.x, pl.transform.position.y, -10f);
+
 	}
 }
