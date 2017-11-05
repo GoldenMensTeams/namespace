@@ -83,25 +83,6 @@
     <Compile Include="Assets\Model\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Model\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Model\Standard Assets\2D\Scripts\Restarter.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Platformer2DUserControl.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Custom Joystick\FourWayController.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Third Person\AbstractTargetFollower.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Third Person\AutoCam.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Third Person\PivotBasedCameraRig.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Third Person\ThidPersonExampleController.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Touchpad Camera\RotateCamera.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Examples\Scenes\Touchpad Camera\RotationConstraint.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\CnInputSystem\CnInputManager.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\CnInputSystem\VirtualAxis.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\CnInputSystem\VirtualButton.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\CommonOnScreenControl.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\Dpad.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\DpadAxis.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\SensitiveJoystick.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\SimpleButton.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\SimpleJoystick.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\Controllers\Touchpad.cs" />
-    <Compile Include="Assets\Model\Standard Assets\CNControls\Scripts\EmptyGraphic.cs" />
     <Compile Include="Assets\Model\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Model\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Model\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -137,9 +118,33 @@
     <Compile Include="Assets\Model\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Model\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Model\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Custom Joystick\FourWayController.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Third Person\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Third Person\AutoCam.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Third Person\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Third Person\ThidPersonExampleController.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Touchpad Camera\RotateCamera.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Examples\Scenes\Touchpad Camera\RotationConstraint.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\CnInputSystem\CnInputManager.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\CnInputSystem\VirtualAxis.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\CnInputSystem\VirtualButton.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\CommonOnScreenControl.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\Dpad.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\DpadAxis.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\SensitiveJoystick.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\SimpleButton.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\SimpleJoystick.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\Controllers\Touchpad.cs" />
+    <Compile Include="Assets\Scripts\CNControls\Scripts\EmptyGraphic.cs" />
     <Compile Include="Assets\Scripts\CameraSk.cs" />
     <Compile Include="Assets\Scripts\ControlPle.cs" />
     <Compile Include="Assets\Scripts\Ground.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Menu\MenuClose.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuOpen.cs" />
+>>>>>>> @daletavg
     <Compile Include="Assets\Scripts\Resp.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
   </ItemGroup>

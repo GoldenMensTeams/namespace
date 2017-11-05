@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f906b1da50a832d4eabc1dd4be2ac65b
 folderAsset: yes
 timeCreated: 1508947067
+=======
+guid: 79aa63c4e5cd4e846a269d5a7df648f5
+folderAsset: yes
+timeCreated: 1509644459
+>>>>>>> @daletavg
 licenseType: Free
 DefaultImporter:
   userData: 
