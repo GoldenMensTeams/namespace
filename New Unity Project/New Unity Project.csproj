@@ -140,11 +140,8 @@
     <Compile Include="Assets\Scripts\CameraSk.cs" />
     <Compile Include="Assets\Scripts\ControlPle.cs" />
     <Compile Include="Assets\Scripts\Ground.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\Menu\MenuClose.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuOpen.cs" />
->>>>>>> @daletavg
     <Compile Include="Assets\Scripts\Resp.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
   </ItemGroup>
